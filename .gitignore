@@ -1,4 +1,65 @@
+# Executáveis
 *.exe
-*.ilk
+*.out
+*.app
+
+# Arquivos de objeto
+*.o
 *.obj
+*.ko
+
+# Arquivos de biblioteca
+*.lib
+*.a
+*.so
+*.dylib
+*.dll
+
+# Arquivos do Visual Studio
 *.pdb
+*.idb
+*.ilk
+*.cache
+*.db
+
+# Debug e Release
+[Dd]ebug/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Outros
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.log
+*.tlog
+
+# Arquivos temporários
+*~
+*.swp
+*.swo
+
+# Arquivos de dados gerados
+*.dat
+*.out
+*.tmp
+
+# Dependências (se tiver)
+deps/
+vendor/
