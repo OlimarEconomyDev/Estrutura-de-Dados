@@ -68,3 +68,24 @@ bool inserElemeLista(LISTA* l, REGISTRO reg, int i){
     return true;
 
 }
+
+bool excluirElemLista(TIPOCHAVE ch, LISTA* l){
+    int pos;
+    int j;
+
+    pos = buscaSequencial(l, ch);
+    if(pos <= -1){
+        return false;
+    }
+
+    for (j = pos; j < l->nroElem-1; j++)
+    {
+        l->A[j] = l->A[j+1];
+    }
+    l->nroElem--;
+    return true;
+}
+
+void reinicilizarLista(LISTA* l){
+    l->nroElem = 0;
+}
